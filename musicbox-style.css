@@ -1,3 +1,70 @@
 /*
 TODO(you): Write any additional styles you need here.
 */
+
+.block {
+	display: none !important;;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+#gif{
+  //background-color: blue;
+  height: calc(100vh - 70px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+footer{
+  //background-color: purple;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer img{
+  height: 60px;
+  width: 60px;
+}
+
+.front{
+  background-image: url("");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+}
+
+.back{
+  background-image: url("");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+}
+
+#loading{
+  //background-color: blue;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #e2e2e2;
+  font-size: 2em;
+  font-style: italic;
+}

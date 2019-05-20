@@ -5,6 +5,14 @@
 class App {
   constructor() {
     // TODO(you): Implement the constructor and add fields as necessary.
+    this._startMusic = this._startMusic.bind(this);
+
+    this.menu = new MenuScreen(this._startMusic);
+    this.music = new MusicScreen();
   }
   // TODO(you): Add methods as necessary.
+
+  _startMusic(obj){
+  	this.music._load(obj);
+  }
 }
